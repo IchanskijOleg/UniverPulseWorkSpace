@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConApp03", "ConApp03\ConApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConApp04", "ConApp04\ConApp04.csproj", "{826F540B-298B-40AD-86CF-93422592379E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp5", "ConsoleApp5\ConsoleApp5.csproj", "{109993D5-F6D8-4DA4-84EF-741D42887001}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{826F540B-298B-40AD-86CF-93422592379E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{826F540B-298B-40AD-86CF-93422592379E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{826F540B-298B-40AD-86CF-93422592379E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109993D5-F6D8-4DA4-84EF-741D42887001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109993D5-F6D8-4DA4-84EF-741D42887001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109993D5-F6D8-4DA4-84EF-741D42887001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109993D5-F6D8-4DA4-84EF-741D42887001}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
