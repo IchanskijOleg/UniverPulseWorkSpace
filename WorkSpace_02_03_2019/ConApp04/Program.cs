@@ -26,7 +26,7 @@ namespace ConApp04
         static void Main(string[] args)
         {
             int[] mas = { 1, 0, 6 };
-            Sort(mas);
+            BubbleSort(mas);
 
         }
     }
