@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace AgencyNews
 {
@@ -55,24 +56,35 @@ namespace AgencyNews
             Radio radio = new Radio();
             NewsPaper paper = new NewsPaper();
 
-            Action<News> actionKyiv = tv.Update;
-            actionKyiv += radio.Update;
-            actionKyiv += paper.Update;
+            //Action<News> actionKyiv = tv.Update;
+            //actionKyiv += radio.Update;
+            //actionKyiv += paper.Update;
+            NewsEvent actionKyiv = new NewsEvent();
+            actionKyiv.EventNewsUpdate += tv.Update;
+            actionKyiv.EventNewsUpdate += radio.Update;
+            actionKyiv.EventNewsUpdate += paper.Update;
 
             Action<News> actionLviv = tv.Update;
             actionLviv += radio.Update;
             actionLviv += paper.Update;
+            Action<News> actionAnonim = (news) => { Console.WriteLine("Anonim" + news); };
+            actionLviv += (n) =>
+            {
+                StreamWriter sw = new StreamWriter(@"D:\news.txt", true);
+                sw.WriteLine("Radio" + n);
+                sw.Close();
+            };
 
             for (int i = 0; i < 10; i++)
             {
-                actionKyiv(new News { City = "Kiev", Id = i, Info = "Spring", Time = DateTime.Now });
+                actionKyiv.OnEvent(new News { City = "Kiev", Id = i, Info = "Spring", Time = DateTime.Now });
                 if (i % 2 == 0)
                 {
                     actionLviv(new News { City = "Lviv", Id = i, Info = "Spring", Time = DateTime.Now });
                 }
                 if (i == 5)
                 {
-                    actionKyiv -= radio.Update;
+                    actionKyiv.EventNewsUpdate -= radio.Update;
                 }
                 if (i == 6)
                 {
