@@ -27,10 +27,10 @@ namespace ConApp04
         }
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+
             int[] mas = { 1, 0, 6 };
             BubbleSort(mas);
-=======
+
             Action<int[]> Sort = BubbleSort;
             DelegateSort Sort1 = BubbleSort;
 
@@ -63,7 +63,6 @@ namespace ConApp04
             }
 
             Console.ReadKey();
->>>>>>> origin/master
 
         }
     }

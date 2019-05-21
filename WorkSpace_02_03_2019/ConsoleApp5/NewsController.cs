@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AgencyNews
 {
-    class NewsController : IObsevereble
+    class NewsController : IObseverable
     {
         //розсилка наблюдателям
         //регестриция наблюд

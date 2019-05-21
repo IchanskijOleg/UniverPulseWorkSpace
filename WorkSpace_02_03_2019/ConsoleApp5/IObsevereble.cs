@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AgencyNews
 {
     //наблюдаемое
-    public interface IObseverable :  
+    public interface IObseverable 
     {
         void Register(IObserver obs);
         void Delete(IObserver obs);
