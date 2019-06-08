@@ -14,7 +14,7 @@ namespace ConsoleApp131
             Buffer buf = new Buffer();
             Prodycer p = new Prodycer(buf);
             Customer c = new Customer(buf);
-            Prodycer p1 = new Prodycer(buf);
+            //Prodycer p1 = new Prodycer(buf);
 
             Console.ReadKey();
         }

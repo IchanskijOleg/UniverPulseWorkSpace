@@ -39,6 +39,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppTh2", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp131", "ConsoleApp131\ConsoleApp131.csproj", "{F62305DA-B518-4EFB-9BF9-70FC4CB76643}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppAutoStation", "ConsoleAppAutoStation\ConsoleAppAutoStation.csproj", "{0304539B-ED68-4D0E-996C-160FA0A70D68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfServiceLibrary1\WcfServiceLibrary1.csproj", "{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfWindowsFormsApplication", "WcfWindowsFormsApplication\WcfWindowsFormsApplication.csproj", "{049A7D5A-50D4-45BA-BB3A-1672DBBCCC0C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A} = {4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppWCFServer", "ConsoleAppWCFServer\ConsoleAppWCFServer.csproj", "{4858AA10-BDD0-4461-80FE-D5E4055800E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppWCFClient", "ConsoleAppWCFClient\ConsoleAppWCFClient.csproj", "{B1D508BF-D7CD-4F25-9C4A-F6F7E27FAD28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcClassLibrary", "CalcClassLibrary\CalcClassLibrary.csproj", "{2F3D9C27-8A2B-4DA7-A2F5-E25F79759438}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +132,30 @@ Global
 		{F62305DA-B518-4EFB-9BF9-70FC4CB76643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62305DA-B518-4EFB-9BF9-70FC4CB76643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62305DA-B518-4EFB-9BF9-70FC4CB76643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0304539B-ED68-4D0E-996C-160FA0A70D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0304539B-ED68-4D0E-996C-160FA0A70D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0304539B-ED68-4D0E-996C-160FA0A70D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0304539B-ED68-4D0E-996C-160FA0A70D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF2EA5A-F915-4720-84B6-074CD7E2FC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049A7D5A-50D4-45BA-BB3A-1672DBBCCC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049A7D5A-50D4-45BA-BB3A-1672DBBCCC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049A7D5A-50D4-45BA-BB3A-1672DBBCCC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049A7D5A-50D4-45BA-BB3A-1672DBBCCC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4858AA10-BDD0-4461-80FE-D5E4055800E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4858AA10-BDD0-4461-80FE-D5E4055800E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4858AA10-BDD0-4461-80FE-D5E4055800E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4858AA10-BDD0-4461-80FE-D5E4055800E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D508BF-D7CD-4F25-9C4A-F6F7E27FAD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D508BF-D7CD-4F25-9C4A-F6F7E27FAD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D508BF-D7CD-4F25-9C4A-F6F7E27FAD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D508BF-D7CD-4F25-9C4A-F6F7E27FAD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3D9C27-8A2B-4DA7-A2F5-E25F79759438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3D9C27-8A2B-4DA7-A2F5-E25F79759438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3D9C27-8A2B-4DA7-A2F5-E25F79759438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3D9C27-8A2B-4DA7-A2F5-E25F79759438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
